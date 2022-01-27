@@ -1,4 +1,4 @@
-package Payroll;
+package payroll;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -21,6 +21,9 @@ The Greeting objects automatically are converted to JSON by Spring’s MappingJa
 /*
 Test the Service
 http://localhost:8080/greeting
+{"id":1,"content":"Hello, World!"}
+http://localhost:8080/greeting?name=Kim
+{"id":1,"content":"Hello, Kim!"}
  */
 @RestController
 public class GreetingController {
